@@ -13,3 +13,7 @@ class  Join_in_beijin(CoffeePage):
         page_flag_xpath = "//div[@class='info']"
         page_flag_keyword = u'北京'
 
+class Join_in_wuhan(CoffeePage):
+        url = "http://47.92.220.226/bbs/index.php/location/show/id-2"
+        page_flag_xpath = "//div[@class='info']"
+        page_flag_keyword = u'武汉'
