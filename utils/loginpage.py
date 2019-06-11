@@ -1,10 +1,10 @@
 # -*-encoding:utf-8-*-
-from coffee.coffeepage import CoffeePage
+from coffee.webdrivercoffee import CoffeePage
 from utils.urls import LOGIN_PAGE_URL
 
 class LoginPage(CoffeePage):
     url = LOGIN_PAGE_URL
-    page_xpath = "//div[@class='fs24']"
+    page_flag_xpath = "//div[@class='fs24']"
     page_flag_keyword = u"用户登录"
 
     @property
