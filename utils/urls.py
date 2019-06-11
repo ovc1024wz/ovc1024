@@ -11,3 +11,5 @@ HOME_PAGE = HOST + "/bbs/"
 ARTICLE_PAGE_URL = HOST + "/bbs/index.php/article"
 SHEQU_PAGE_URL = HOST + "/bbs/index.php/my"
 CREATETEAM_PAGE_URL = HOST + "/bbs/index.php/group/create"
+ALBUM_PAGE_URL=HOST+'/bbs/index.php/photo'
+ALBUM_PAGE_GROUP_URL=HOST+'/bbs/index.php/photo/create'
