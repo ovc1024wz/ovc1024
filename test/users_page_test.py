@@ -4,7 +4,7 @@ from utils.loginpage import LoginPage
 from pageobject.userspage import UsersPage
 
 
-class MyTestCase(unittest.TestCase):
+class TestUsers(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         loginpage = LoginPage()
@@ -13,7 +13,7 @@ class MyTestCase(unittest.TestCase):
         loginpage.open_and_check()
         loginpage.login(email, password)
 
-    def test_something(self):
+    def test_users_page(self):
         UsersPage().open_and_check()
         self.assertEqual(True, UsersPage().open_and_check())
 
