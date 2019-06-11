@@ -16,7 +16,7 @@ class TestTongChengPage(unittest.TestCase):
         def test_tongchengpage(self):
             TongChengPage().open_and_check()
 
-        def test_join(self):
+        def test_join_beijin(self):
             Join_in_beijin().open_and_check()
 
 if __name__ == '__main__':
