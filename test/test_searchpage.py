@@ -17,7 +17,7 @@ class TestSearchPage(unittest.TestCase):
         self.assertTrue( self.search.open_and_check())
 
     def test_search_keywords(self):
-
+        self.search.open_and_check()
         self.search.input_keywords('11')
         self.assertTrue(self.search.check_if_search_true())
 
