@@ -6,7 +6,6 @@ from coffee.webdrivercoffee import CoffeePage
 
 
 
-
 email = '958022706@qq.com'
 password = '8763366'
 login = LoginPage()
@@ -14,13 +13,12 @@ login.open_and_check()
 login.login(email,password)
 
 
-
-class SeachPage(CoffeePage):
+class SearchPage(CoffeePage):
 
     url = SEARCH_PAGE
     page_flag_xpath = "//div[@class='c9 mt-3 ml-3 fs12']"
     page_flag_keyword = u"标题模糊搜索"
-    page_flag_search = u"获得约 9 条结果"
+    page_flag_search = None
 
 
     def input_keywords(self,word):
@@ -32,8 +30,8 @@ class SeachPage(CoffeePage):
 
     def check_if_search_true(self):
         output_words = self.driver.find_element_by_xpath("//div[@class='s_top']")
-        print("[DEBUG:%s]" % output_words.text)
-        print("[DEBUG:%s]" % self.page_flag_search)
+        print("[DEBUG:actual_result:%s]" % output_words.text)
+        print("[DEBUG:expect_result:%s]" % self.page_flag_search)
         if  self.page_flag_search == output_words.text:
             print("[DEBUG:true]" )
             return True
