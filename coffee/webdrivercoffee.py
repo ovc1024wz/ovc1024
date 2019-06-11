@@ -13,6 +13,7 @@ class CoffeePage():
     def open_and_check(self):
         self.driver.get(self.url)
         return self.check_if_page_opened()
+
     def check_if_page_opened(self):
 
         act_keyword = self.driver.find_element_by_xpath(self.page_flag_xpath).text
