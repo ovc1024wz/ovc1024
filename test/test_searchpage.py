@@ -8,6 +8,7 @@ from pageobject.searchpage import SeachPage
 
 class TestSearchPage(unittest.TestCase):
 
+
     @classmethod
     def setUpClass(cls):
         cls.search = SeachPage()
@@ -17,7 +18,6 @@ class TestSearchPage(unittest.TestCase):
 
     def test_search_keywords(self):
 
-        self.page_flag_search = u"获得约9条结果"
         self.search.input_keywords('11')
         self.assertTrue(self.search.check_if_search_true())
 
