@@ -1,5 +1,6 @@
+# -- encoding:utf-8 --
 import unittest
-
+import time
 from utils.loginpage import LoginPage
 from pageobject.mycommunity import MyCommPage, CreateTream
 
@@ -13,17 +14,18 @@ class TestMyComm(unittest.TestCase):
         loginPage.login(email, password)
 
     def test_mycomm_page(self):
-        MyCommPage().open_and_check()
-        # self.assertEqual(True, False)
+        mycommunity = MyCommPage()
+        mycommunity.open_and_check()
+        self.assertTrue(mycommunity.check_if_page_opened())
+        time.sleep(3)
+
+        team_element = mycommunity.driver.find_element_by_xpath("//a[@class='btn btn-sm btn-info float-right']")
+        team_element.click()
 
     def test_create_team_page(self):
-        CreateTream().open_and_check()
-
-    # def test_team(self):
-    #     button = self.driver.find_element_by_xpath("//a[@class='btn btn-sm btn-info float-right']")
-    #     button.click()
-
-
+        createtream = CreateTream()
+        createtream.open_and_check()
+        self.assertTrue(createtream.check_if_page_opened())
 
 
 if __name__ == '__main__':

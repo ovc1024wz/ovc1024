@@ -8,6 +8,8 @@ class MyCommPage(CoffeePage):
     page_flag_xpath = "//div[@class='col-md-9']/div[1]/div[1]"
     page_flag_keyword = u"我的小组"
 
+
+
 class CreateTream(CoffeePage):
     url = CREATETEAM_PAGE_URL
     page_flag_xpath = "//form[@role='form']/div[1]/label"
