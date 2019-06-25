@@ -5,7 +5,7 @@ YEWEI_PAGE_URL = HOST + "/bbs/index.php/home/info/id-1"
 SEARCH_PAGE = HOST + "/bbs/index.php/search"
 SHEQU_PAGE_URL = HOST + "/bbs/index.php/my"
 CREATETEAM_PAGE_URL = HOST + "/bbs/index.php/group/create"
-
+ARTICLE_PAGE_URL = HOST + '/bbs/index.php/article'
 USERS_PAGE_URL = HOST + "/bbs/index.php/user"
 TONGCHENG_PAGE_URL = HOST + "/bbs/index.php/location"
 BEIJING_PAGE_URL = HOST + "/bbs/index.php/location/show/id-1"
